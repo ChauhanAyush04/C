@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Connect - Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: url('background-image.jpg') no-repeat center center/cover; /* Replace with actual background image path */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Left section with logo and image */
+        .left-section {
+            background: linear-gradient(135deg, #a943e3, #f2a8ff);
+            color: white;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-section img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .left-section h1 {
+            font-weight: 500;
+            margin: 20px 0;
+        }
+
+        /* Right section with form */
+        .right-section {
+            flex: 2;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav .login-btn {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #a943e3, #f2a8ff);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* Form styling */
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .form-field label {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        .form-field input, .form-field textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-field input::placeholder, .form-field textarea::placeholder {
+            color: #bbb;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #a943e3, #f2a8ff);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Footer section */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            color: white;
+            text-decoration: none;
+        }
+        .home:hover{
+            text-decoration: underline;
+        }
+        .about:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" >
+    <!-- Left Section -->
+    <div class="left-section">
+        <img src="group.png" alt="3D Cubes Image" style="position: relative; top: 70px;"> <!-- Replace with actual image path -->
+        <h1>Career Connect®</h1>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <!-- Navigation -->
+        <div class="nav">
+            <div>
+                <a class="home" href="#">Home</a>
+                <a class="about" href="#">About Us</a>
+                <a class="contact" href="#" style="color: #a943e3;">Contact</a>
+            </div>
+            <button class="login-btn">Log In</button>
+        </div>
+
+        <!-- Form -->
+        <h2>Get In Touch</h2>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter Your First Name">
+            </div>
+            <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter Your Last Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter Your Phone Number">
+            </div>
+        </div>
+        <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+        </div>
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+</body>
+</html>
